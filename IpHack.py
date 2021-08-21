@@ -60,8 +60,6 @@ try:
         print(red+"[+]——-————————-—–———[+]"+red)
         print (a, "[Latitude]:", data['lat'])
         print(red+"[+]————-——–—————–———[+]"+red)
-        print (a, "[Offset]:", data['offset'])
-        print(red+"[+]——-——————————————[+]"+red)
         print (b, "[Time zone]:", data['timezone'])
         print(red+"[+]—————————————————[+]"+red)
         print (a, "[Zip code]:", data['zip'])
