@@ -28,8 +28,8 @@ print (red+"""
 ██║██║░░░░░██║░░██║██║░░██║╚█████╔╝██║░╚██╗
 ╚═╝╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝
 """+red)
-print (lgreen+bold+"    Developer: Misha Korzhik \n"+clear)
-print (yellow+bold+"       Tool Version: v1.1 \n"+clear)
+print (lgreen+bold+" Developer: Misha Korzhik \n"+clear)
+print (yellow+bold+"   Tool Version: v1.1 \n"+clear)
 
 ip = args.target
 
