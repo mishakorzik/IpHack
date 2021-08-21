@@ -38,7 +38,7 @@ api = "http://ip-api.com/json/"
 try:
         data = requests.get(api+ip).json()
         sys.stdout.flush()
-        a = lgreen+bold+"[>]"
+        a = cyan+bold+"[>]"
         b = cyan+bold+"[>]"
         print (a, "[Status]:", data['status'])
         print(red+"[+]—————————————————[+]"+red)
