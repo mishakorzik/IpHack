@@ -22,6 +22,8 @@ try:
         a = lgreen+bold+"[$]"
         b = cyan+bold+"[$]"
         print (a, " <Victim:", data['query'])
+        print(red+"[>]———————-–————–——[<]"+red)
+        print (b, " <Status:", data['status'])
         print(red+"[>]——————-————-–———[<]"+red)
         print (b, " <ISP:", data['isp'])
         print(red+"[>]——————-————-–———[<]"+red)
@@ -39,9 +41,9 @@ try:
         print(red+"[>]——-–————————-———[<]"+red)
         print (a, " <Latitude:", data['lat'])
         print(red+"[>]————————————-–——[<]"+red)
-        print (b, " <Currency:", data['currency'])
+        print (b, " <Longitude:", data['lon'])
         print(red+"[>]————————————-–——[<]"+red)
-        print (b, " <Offset:", data['offset'])
+        print (b, " <Currency:", data['currency'])
         print(red+"[>]——————-————-–———[<]"+red)
         print (b, " <Continent:", data['continent'])
         print(red+"[>]——————-————-–———[<]"+red)
