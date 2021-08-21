@@ -51,7 +51,7 @@ try:
         print (b, "[City]:", data['city'])
         print(red+"[+]—————————————————[+]"+red)
         print (a, "[Region]:", data['region'])
-        print(red+"[+]——————————–-–————[+]+red)
+        print(red+"[+]——————————–-–————[+]"+red)
         print (a, "[Country]:", data['country'])
         print(red+"[+]———-———————–—————[+]"+red)
         print (a, "[CountryCode]:", data['countryCode'])
