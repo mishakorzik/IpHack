@@ -7,7 +7,7 @@ from sys import argv
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument ("-h", help= "target/host IP address", type=str, dest='target', required=True )
+parser.add_argument ("-v", help= "target/host IP address", type=str, dest='target', required=True )
 
 args = parser.parse_args()
 
