@@ -11,6 +11,25 @@ parser.add_argument ("-h", help= "target/host IP address", type=str, dest='targe
 
 args = parser.parse_args()
 
+#colors
+red = '\033[31m'
+yellow = '\033[93m'
+lgreen = '\033[92m'
+clear = '\033[0m'
+bold = '\033[01m'
+cyan = '\033[96m'
+
+#banner
+print (red+"""
+██╗██████╗░██╗░░██╗░█████╗░░█████╗░██╗░░██╗
+██║██╔══██╗██║░░██║██╔══██╗██╔══██╗██║░██╔╝
+██║██████╔╝███████║███████║██║░░╚═╝█████═╝░
+██║██╔═══╝░██╔══██║██╔══██║██║░░██╗██╔═██╗░
+██║██║░░░░░██║░░██║██║░░██║╚█████╔╝██║░╚██╗
+╚═╝╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝
+"""+red)
+print (lgreen+bold+"    Developer: Misha Korzhik \n"+clear)
+print (yellow+bold+"       Tool Version: v1.1 \n"+clear)
 
 ip = args.target
 
