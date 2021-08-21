@@ -61,8 +61,6 @@ try:
         print(red+"[+]————-——–—————–———[+]"+red)
         print (b, "[Time zone]:", data['timezone'])
         print(red+"[+]—————————————————[+]"+red)
-        print (b, "[Device]:", data['mobile'])
-        print(red+"[+]—————————————————[+]"+red)
         print (b, "[Proxy]:", data['proxy'])
         print(red+"[+]—————————————————[+]"+red)
         print (b, "[Hosting]:", data['hosting'])
