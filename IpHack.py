@@ -26,10 +26,9 @@ print (red+"""
 ██║██████╔╝███████║███████║██║░░╚═╝█████═╝░
 ██║██╔═══╝░██╔══██║██╔══██║██║░░██╗██╔═██╗░
 ██║██║░░░░░██║░░██║██║░░██║╚█████╔╝██║░╚██╗
-╚═╝╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝
-"""+red)
-print (lgreen+bold+" Developer: Misha Korzhik \n"+clear)
-print (yellow+bold+"   Tool Version: v1.1 \n"+clear)
+╚═╝╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝"""+red)
+print (lgreen+bold+"   Developer: Misha Korzhik "+clear)
+print (yellow+bold+"     Tool Version: v1.1 \n"+clear)
 
 ip = args.target
 
@@ -61,6 +60,12 @@ try:
         print (a, "[Latitude]:", data['lat'])
         print(red+"[+]————-——–—————–———[+]"+red)
         print (b, "[Time zone]:", data['timezone'])
+        print(red+"[+]—————————————————[+]"+red)
+        print (b, "[Device]:", data['mobile'])
+        print(red+"[+]—————————————————[+]"+red)
+        print (b, "[Proxy]:", data['proxy'])
+        print(red+"[+]—————————————————[+]"+red)
+        print (b, "[Hosting]:", data['hosting'])
         print(red+"[+]—————————————————[+]"+red)
         print (a, "[Zip code]:", data['zip'])
         print (" "+yellow)
