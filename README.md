@@ -12,7 +12,7 @@
 <p align="center">
 • <a href="https://github.com/mishakorzik/IpHack/blob/main/LICENSE">License</a> 
 • <a href="https://github.com/mishakorzik/IpHack/issues">Issues</a> 
-• <a href="https://github.com/mishakorzik/IpHacк/projects">Project</a> 
+• <a href="https://github.com/mishakorzik/IpHаck/projects">Project</a> 
 • <a href="https://github.com/mishakorzik/IpHack/wiki">Wikipedia</a> •
 
 </p>
