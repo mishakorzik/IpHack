@@ -38,7 +38,7 @@
 - Now you can learn more about the device via IP
 
 -----
-## Installing
+## Install
 
 ```bash
 apt update && apt upgrade
@@ -47,3 +47,13 @@ git clone https://github.com/mishakorzik/IpHack
 cd IpHack
 bash setup.sh
 ```
+
+**to start IpHack write the command:**
+```bash
+cd IpHack
+python IpHack.py -v (victim ip)
+```
+
+## Supporters
+[![Stargazers repo roster for @mishakorzik/IpHack](https://reporoster.com/stars/mishakorzik/IpHack)](https://github.com/mishakorzik/IpHack/stargazers)
+[![Forkers repo roster for @mishakorzik/IpHack](https://reporoster.com/forks/mishakorzik/IpHack)](https://github.com/mishakorzik/IpHack/members)
