@@ -60,4 +60,4 @@ echo -e "$yellow[!][Installing Module lolcat...]"
 apt install lolcat
 fi
 
-echo -e "$green[>]—————[Succesful Intslled]
+echo -e "$green[>]—————[Succesful Intslled]"
