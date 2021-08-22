@@ -18,3 +18,7 @@
 </p>
 
 **Track Location With Live Address And City in Termux**
+
+---
+
+> Я не несу ответственности за ваши действия. Скачивая программное обеспечение из этого репозитория, вы соглашаетесь с [лицензией](https://github.com/mishakorzik/AllHackingTools/blob/main/LICENSE).
