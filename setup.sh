@@ -5,6 +5,9 @@ orange='\e[38;5;166m'
 green='\033[92m'
 
 clear
+apt-get update -y
+apt-get upgrade -y
+clear
 sleep 1
 echo -e "$yellow  ___                 __         .__  .__                 "
 echo -e "$yellow |   | ____   _______/  |______  |  | |  |   ___________  "    
@@ -37,13 +40,13 @@ else
 echo -e "$red[~]-[Python].......................[ FAILED ]"
 sleep 1.5
 echo -e "$yellow[!][Installing Module Python...]"
-apt install python > /dev/null
 apt install python
 apt install python2
 apt install python3
-pkg install pip
-pkg install pip2
+apt install pip
+apt install pip2
 pip2 install --upgrade pip
+pip install requests
 fi
 
 which lolcat > /dev/null 2>&1
