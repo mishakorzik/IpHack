@@ -17,8 +17,33 @@
 
 </p>
 
-**Track Location With Live Address And City in Termux**
+> IpHack: is a tracking tool for both IP location and tracking testing.
 
 ---
 
+**Track Location With Live Address And City in Termux**
+
 > Я не несу ответственности за ваши действия. Скачивая программное обеспечение из этого репозитория, вы соглашаетесь с [лицензией](https://github.com/mishakorzik/IpHack/blob/main/LICENSE).
+
+----
+## New Features
+
+**1) New Functions**
+- Now you can find out in which country the person is.
+
+**2) New Desing**
+- Now a new design has been added and now it is more beautiful.
+
+**3) More Information**
+- Now you can learn more about the device via IP
+
+-----
+## Installing
+
+```bash
+apt update && apt upgrade
+apt install git
+git clone https://github.com/mishakorzik/IpHack
+cd IpHack
+bash setup.sh
+```
