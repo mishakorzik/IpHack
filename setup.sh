@@ -18,7 +18,7 @@ echo -e "$yellow          \/     \/            \/               \/        "
 echo ""
 echo -e "$orange [INFO] $yellow Tool Name: IpHack  "
 echo -e "$orange [INFO] $yellow Developer: Misha Korzhik " 
-echo -e "$orange [INFO] $yellow License  : Apache License 2.0 "  " 
+echo -e "$orange [INFO] $yellow License  : Apache License 2.0 "  
 
 
 which git > /dev/null 2>&1
