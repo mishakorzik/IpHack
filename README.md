@@ -54,6 +54,20 @@ cd IpHack
 python IpHack.py -v (victim ip)
 ```
 
+## I recommend watching
+
+1.<a href="https://github.com/mishakorzik/qiq">qiq - Useful batch installer</a>
+
+2.<a href="https://github.com/mishakorzik/Gmail-Hack">Gmail-Hack - Easy email hacking</a>
+
+3.<a href="https://github.com/mishakorzik/AdminHack">AdminHack - Hacking bad sites</a>
+
+4.<a href="https://github.com/mishakorzik/Infect">Infect - Easy virus creation</a>
+
+5.<a href="https://github.com/mishakorzik/Free-Proxy">Free-Proxy - Lots of free proxy servers</a>
+
+6.<a href="https://github.com/mishakorzik/AllHackingTools">AllHackingTools - System for large hacking</a>
+
 ## Supporters
 [![Stargazers repo roster for @mishakorzik/IpHack](https://reporoster.com/stars/mishakorzik/IpHack)](https://github.com/mishakorzik/IpHack/stargazers)
 [![Forkers repo roster for @mishakorzik/IpHack](https://reporoster.com/forks/mishakorzik/IpHack)](https://github.com/mishakorzik/IpHack/members)
