@@ -68,6 +68,8 @@ try:
         print(red+"[+]—————————————————[+]"+red)
         print (a, "[Zip code]:", data['zip'])
         print(red+"[+]—————————————————[+]"+red)
+        print (a, "[GoogleMaps]: Latitude + Longitude")
+        print (a, "[Examples  ]: 51.6375,25.7916")
         print (" "+yellow)
 
 except KeyboardInterrupt:
