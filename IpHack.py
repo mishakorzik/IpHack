@@ -46,11 +46,15 @@ try:
         print(red+"[+]———-————————–————[+]"+red)
         print (a, "[Org]:", data['org'])
         print(red+"[+]———-————————–————[+]"+red)
+        print (a, "[Query]:", data['query'])
+        print(red+"[+]———-————————–————[+]"+red)
         print (a, "[As]:", data['as'])
         print(red+"[+]—-—————————-–————[+]"+red)
         print (a, "[City]:", data['city'])
         print(red+"[+]—————————————————[+]"+red)
         print (a, "[Region]:", data['region'])
+        print(red+"[+]——————————–-–————[+]"+red)
+        print (a, "[RegionName]:", data['regionName'])
         print(red+"[+]——————————–-–————[+]"+red)
         print (a, "[Country]:", data['country'])
         print(red+"[+]———-———————–—————[+]"+red)
@@ -63,6 +67,7 @@ try:
         print (a, "[Time zone]:", data['timezone'])
         print(red+"[+]—————————————————[+]"+red)
         print (a, "[Zip code]:", data['zip'])
+        print(red+"[+]—————————————————[+]"+red)
         print (" "+yellow)
 
 except KeyboardInterrupt:
