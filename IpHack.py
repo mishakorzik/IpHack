@@ -74,7 +74,7 @@ try:
         print (a, "[Domain]:", data5['domain'])
         print (a, "[ABBR]:", data5['abbr'])
         print (a, "[Name]:", data5['name'])
-        print (a, "[Type]:", data5['type'])
+        print (a, "[Isp type]:", data5['type'])
         print (a, "[Phone]:", data1['country_phone'])
         print (a, "[Mobile]:", data2['mobile'])
         print (a, "[Hosting]:", data2['hosting'])
