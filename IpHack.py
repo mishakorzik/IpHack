@@ -32,16 +32,19 @@ print (yellow+bold+"        Tool Version: v1.1 \n"+clear)
 
 ip = args.target
 inf = "?fields=asname,reverse,mobile,proxy,hosting,offset,currency,continent"
+inf1 = "/json/"
 
 api = "http://ip-api.com/json/"
 api1 = "http://ipwhois.app/json/"
 api2 = "http://edns.ip-api.com/json/"
+api3 = "https://ipapi.co/"
 
 try:
         data = requests.get(api+ip).json()
         data1 = requests.get(api1+ip).json()
         data2 = requests.get(api+ip+inf).json()
         data3 = requests.get(api2+ip).json()
+        data4 = requests.get(api3+ip+inf1).json()
         sys.stdout.flush()
         a = lgreen+bold+"[>]"
         print (a, "[Status]:", data['status'])
@@ -62,8 +65,12 @@ try:
         print (a, "[Time zone]:", data['timezone'])
         print (a, "[Zip code]:", data['zip'])
         print (a, "[Offset]:", data2['offset'])
+        print (a, "[Utc offset]:", data4['utc_offset'])
         print (a, "[Currency]:", data2['currency'])
         print (a, "[Continent]:", data2['continent'])
+        print (a, "[Country iso3]:", data4['country_code_iso3'])
+        print (a, "[Country area]:", data4['country_area'])
+        print (a, "[Cuntry population]:", data4['country_population'])
         print (a, "[Phone]:", data1['country_phone'])
         print (a, "[Mobile]:", data2['mobile'])
         print (a, "[Hosting]:", data2['hosting'])
