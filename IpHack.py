@@ -27,11 +27,11 @@ print (red+"""
 ██║██╔═══╝░██╔══██║██╔══██║██║░░██╗██╔═██╗░
 ██║██║░░░░░██║░░██║██║░░██║╚█████╔╝██║░╚██╗
 ╚═╝╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝"""+red)
-print (lgreen+bold+"      Developer: Misha Korzhik "+clear)
+print (yellow+bold+"      Developer: Misha Korzhik "+clear)
 print (yellow+bold+"        Tool Version: v1.1 \n"+clear)
 
 ip = args.target
-inf = "?fields=asname,reverse,mobile,proxy,hosting"
+inf = "?fields=asname,reverse,mobile,proxy,hosting,offset,currency"
 
 api = "http://ip-api.com/json/"
 api1 = "http://ipwhois.app/json/"
@@ -60,6 +60,8 @@ try:
         print (a, "[Longitude]:", data1['longitude'])
         print (a, "[Time zone]:", data['timezone'])
         print (a, "[Zip code]:", data['zip'])
+        print (a, "[Offset]:", data2['offset'])
+        print (a, "[Currency]:", data2['currency']
         print (a, "[Phone]:", data1['country_phone'])
         print (a, "[Mobile]:", data2['mobile'])
         print (a, "[Hosting]:", data2['hosting'])
