@@ -60,7 +60,7 @@ try:
         print (a, "[Time zone]:", data['timezone'])
         print (a, "[Zip code]:", data['zip'])
         print (a, "[Offset]:", data2['offset'])
-        print (a, "[Currency]:", data2['currency']
+        print (a, "[Currency]:", data2['currency'])
         print (a, "[Phone]:", data1['country_phone'])
         print (a, "[Mobile]:", data2['mobile'])
         print (a, "[Hosting]:", data2['hosting'])
