@@ -33,14 +33,18 @@ print (yellow+bold+"        Tool Version: v1.1 \n"+clear)
 ip = args.target
 
 api = "http://ip-api.com/json/"
+api1 = "http://ipwhois.app/json/"
 
 try:
         data = requests.get(api+ip).json()
+        data1 = requests.get(api1+ip).json()
         sys.stdout.flush()
         a = lgreen+bold+"[>]"
         print (a, "[Status]:", data['status'])
         print(red+"[+]————————————————————[+]"+red)
         print (a, "[Victim]:", data['query'])
+        print(red+"[+]————————————————————[+]"+red)
+        print (a, "[Type]:", data1['type'])
         print(red+"[+]————————————————————[+]"+red)
         print (a, "[ISP]:", data['isp'])
         print(red+"[+]———-———————————–————[+]"+red)
@@ -60,6 +64,8 @@ try:
         print(red+"[+]———-——————————–—————[+]"+red)
         print (a, "[CountryCode]:", data['countryCode'])
         print(red+"[+]–——————————-————————[+]"+red)
+        print (a, "[Country Type]:", data1['country_neighbours'])
+        print(red+"[+]————————————————————[+]"+red)
         print (a, "[Longitude]:", data['lon'])
         print(red+"[+]——-———————————-—–———[+]"+red)
         print (a, "[Latitude]:", data['lat'])
@@ -68,8 +74,10 @@ try:
         print(red+"[+]————————————————————[+]"+red)
         print (a, "[Zip code]:", data['zip'])
         print(red+"[+]————————————————————[+]"+red)
-        print (a, "[GoogleMaps]: Latitude + Longitude")
-        print (a, "[Examples  ]: 51.6375,25.7916")
+        print (a, "[Phone]:", data1['country_phone'])
+        print(red+"[+]————————————————————[+]"+red)
+        print (a, "[Requests]:", data1['completed_requests'])
+        print(red+"[+]————————————————————[+]"+red)
         print (" "+yellow)
 
 except KeyboardInterrupt:
