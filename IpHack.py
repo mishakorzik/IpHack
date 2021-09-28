@@ -7,7 +7,16 @@ from sys import argv
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument ("-v", help= "target/host IP address", type=str, dest='target', required=True )
+parser.add_argument ("-v", help= "
+
+--[ Retrieve IP Geolocation information from: ip-api.com, ipwhois.app
+--[ Donate IpHack: https://www.donationalerts.com/r/misha_korzhik
+--[ Copyright (c) 2019-2020 mishakorzhik
+
+Target/host IP address: --victim, -v
+Update system IpHack: --update, -u
+View more commands: --help,   -h
+About information: --info,  -a", type=str, dest='target', required=True )
 
 args = parser.parse_args()
 
@@ -43,8 +52,6 @@ try:
         print (a, "[Status]:", data['status'])
         print(red+"[+]————————————————————[+]"+red)
         print (a, "[Victim]:", data['query'])
-        print(red+"[+]————————————————————[+]"+red)
-        print (a, "[HostName]:", data['hostname'])
         print(red+"[+]————————————————————[+]"+red)
         print (a, "[Type]:", data1['type'])
         print(red+"[+]————————————————————[+]"+red)
