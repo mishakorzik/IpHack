@@ -33,21 +33,20 @@ print (yellow+bold+"        Tool Version: v1.1 \n"+clear)
 ip = args.target
 inf = "?fields=asname,reverse,mobile,proxy,hosting,offset,currency,continent"
 inf1 = "/json/"
-inf2 = "?api-key="
+inf2 = "?api-key=ec7da82e07b5d87ea0e1deb607f3ed813de09009151a8a066041acf1"
 
 api = "http://ip-api.com/json/"
 api1 = "http://ipwhois.app/json/"
 api2 = "http://edns.ip-api.com/json/"
 api3 = "https://ipapi.co/"
 api4 = "https://api.ipdata.co/"
-apikey = "ec7da82e07b5d87ea0e1deb607f3ed813de09009151a8a066041acf1"
 try:
         data = requests.get(api+ip).json()
         data1 = requests.get(api1+ip).json()
         data2 = requests.get(api+ip+inf).json()
         data3 = requests.get(api2+ip).json()
         data4 = requests.get(api3+ip+inf1).json()
-        data5 = requests.get(api4+ip+inf2+apikey).json()
+        data5 = requests.get(api4+ip+inf2).json()
         sys.stdout.flush()
         a = lgreen+bold+"[>]"
         print (a, "[Status]:", data['status'])
