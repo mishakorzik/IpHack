@@ -37,14 +37,12 @@ inf2 = "?api-key=ec7da82e07b5d87ea0e1deb607f3ed813de09009151a8a066041acf1"
 
 api = "http://ip-api.com/json/"
 api1 = "http://ipwhois.app/json/"
-api2 = "http://edns.ip-api.com/json/"
 api3 = "https://ipapi.co/"
 api4 = "https://api.ipdata.co/"
 try:
         data = requests.get(api+ip).json()
         data1 = requests.get(api1+ip).json()
         data2 = requests.get(api+ip+inf).json()
-        data3 = requests.get(api2+ip).json()
         data4 = requests.get(api3+ip+inf1).json()
         data5 = requests.get(api4+ip+inf2).json()
         sys.stdout.flush()
@@ -76,6 +74,8 @@ try:
         print (a, "[Route]:", data5['route'])
         print (a, "[Domain]:", data5['domain'])
         print (a, "[ABBR]:", data5['abbr'])
+        print (a, "[Name]:", data5['name'])
+        print (a, "[Type]:", data5['type'])
         print (a, "[Phone]:", data1['country_phone'])
         print (a, "[Mobile]:", data2['mobile'])
         print (a, "[Hosting]:", data2['hosting'])
@@ -83,7 +83,6 @@ try:
         print (a, "[Tor]:", data5['is_tor'])
         print (" "+lgreen)
         print (a, "[DNS Server]:", data2['proxy'])
-        print (a, "[Geolocation]:", data3['geo'])
         print (a, "[Is known Attacker]:", data5['is_known_attacker'])
         print (a, "[Is known abuser]:", data5['is_known_abuser'])
         print (a, "[Is threat]:", data5['is_threat'])
