@@ -31,13 +31,16 @@ print (lgreen+bold+"      Developer: Misha Korzhik "+clear)
 print (yellow+bold+"        Tool Version: v1.1 \n"+clear)
 
 ip = args.target
+inf = "?fields=asname,reverse,mobile,proxy,hosting"
 
 api = "http://ip-api.com/json/"
 api1 = "http://ipwhois.app/json/"
+api2 = "http://ip-api.com/json/"
 
 try:
         data = requests.get(api+ip).json()
         data1 = requests.get(api1+ip).json()
+        data2 = requests.get(api2+ip+inf).json()
         sys.stdout.flush()
         a = lgreen+bold+"[>]"
         print (a, "[Status]:", data['status'])
@@ -58,6 +61,9 @@ try:
         print (a, "[Time zone]:", data['timezone'])
         print (a, "[Zip code]:", data['zip'])
         print (a, "[Phone]:", data1['country_phone'])
+        print (a, "[Mobile]:", data2['mobile'])
+        print (a, "[Hosting]:", data2['hosting'])
+        print (a, "[Proxy]:", data2['proxy'])
         print (a, "[Requests]:", data1['completed_requests'])
         print (" "+yellow)
 
