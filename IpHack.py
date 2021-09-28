@@ -72,7 +72,6 @@ try:
         print (a, "[Mobile]:", data2['mobile'])
         print (a, "[Hosting]:", data2['hosting'])
         print (a, "[Proxy]:", data2['proxy'])
-        print (" "+lgreen)
         print (a, "[Requests]:", data1['completed_requests'])
         print (" "+yellow)
 
