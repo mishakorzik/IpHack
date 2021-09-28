@@ -51,7 +51,7 @@ bash setup.sh
 **to start IpHack write the command:**
 ```bash
 cd IpHack
-python IpHack.py -v (victim ip)
+python IpHack.py -t (victim ip)
 ```
 
 ## I recommend watching
