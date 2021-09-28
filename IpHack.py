@@ -35,12 +35,11 @@ inf = "?fields=asname,reverse,mobile,proxy,hosting,offset,currency"
 
 api = "http://ip-api.com/json/"
 api1 = "http://ipwhois.app/json/"
-api2 = "http://ip-api.com/json/"
 
 try:
         data = requests.get(api+ip).json()
         data1 = requests.get(api1+ip).json()
-        data2 = requests.get(api2+ip+inf).json()
+        data2 = requests.get(api+ip+inf).json()
         sys.stdout.flush()
         a = lgreen+bold+"[>]"
         print (a, "[Status]:", data['status'])
