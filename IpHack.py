@@ -31,15 +31,17 @@ print (yellow+bold+"      Developer: Misha Korzhik "+clear)
 print (yellow+bold+"        Tool Version: v1.1 \n"+clear)
 
 ip = args.target
-inf = "?fields=asname,reverse,mobile,proxy,hosting,offset,currency"
+inf = "?fields=asname,reverse,mobile,proxy,hosting,offset,currency,continent"
 
 api = "http://ip-api.com/json/"
 api1 = "http://ipwhois.app/json/"
+api2 = "http://edns.ip-api.com/json/"
 
 try:
         data = requests.get(api+ip).json()
         data1 = requests.get(api1+ip).json()
         data2 = requests.get(api+ip+inf).json()
+        data3 = requests.get(api2+ip).json()
         sys.stdout.flush()
         a = lgreen+bold+"[>]"
         print (a, "[Status]:", data['status'])
@@ -61,10 +63,14 @@ try:
         print (a, "[Zip code]:", data['zip'])
         print (a, "[Offset]:", data2['offset'])
         print (a, "[Currency]:", data2['currency'])
+        print (a, "[Continent]:", data2['continent'])
         print (a, "[Phone]:", data1['country_phone'])
         print (a, "[Mobile]:", data2['mobile'])
         print (a, "[Hosting]:", data2['hosting'])
         print (a, "[Proxy]:", data2['proxy'])
+        print (" "+lgreen)
+        print (a, "[DNS Server]:", data2['proxy'])
+        print (a, "[Geolocation]:", data3['geo'])
         print (a, "[Requests]:", data1['completed_requests'])
         print (" "+yellow)
 
