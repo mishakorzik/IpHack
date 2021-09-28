@@ -67,7 +67,7 @@ try:
         print (a, "[Continent]:", data2['continent'])
         print (a, "[Country iso3]:", data3['country_code_iso3'])
         print (a, "[Country area]:", data3['country_area'])
-        print (a, "[Cuntry population]:", data4['country_population'])
+        print (a, "[Cuntry population]:", data3['country_population'])
         print (a, "[Phone]:", data1['country_phone'])
         print (a, "[Mobile]:", data2['mobile'])
         print (a, "[Hosting]:", data2['hosting'])
