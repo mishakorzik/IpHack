@@ -72,4 +72,6 @@ except KeyboardInterrupt:
         sys.exit(0)
 except requests.exceptions.ConnectionError as e:
         print (red+"[-]"+" Please check your internet connection!"+clear)
+        print (red+"[-]"+" Error code: 106 DNS server refused to connect!"+clear)
+        print (red+"[-]"+" Error code: 404 Not Found! No internet!"+clear)
 sys.exit(1)
