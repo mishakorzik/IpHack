@@ -33,18 +33,15 @@ print (yellow+bold+"        Tool Version: v1.1 \n"+clear)
 ip = args.target
 inf = "?fields=asname,reverse,mobile,proxy,hosting,offset,currency,continent"
 inf1 = "/json/"
-inf2 = "?api-key=ec7da82e07b5d87ea0e1deb607f3ed813de09009151a8a066041acf1"
 
 api = "http://ip-api.com/json/"
 api1 = "http://ipwhois.app/json/"
 api3 = "https://ipapi.co/"
-api4 = "https://api.ipdata.co/"
 try:
         data = requests.get(api+ip).json()
         data1 = requests.get(api1+ip).json()
         data2 = requests.get(api+ip+inf).json()
-        data4 = requests.get(api3+ip+inf1).json()
-        data5 = requests.get(api4+ip+inf2).json()
+        data3 = requests.get(api3+ip+inf1).json()
         sys.stdout.flush()
         a = lgreen+bold+"[>]"
         print (a, "[Status]:", data['status'])
@@ -65,28 +62,17 @@ try:
         print (a, "[Time zone]:", data['timezone'])
         print (a, "[Zip code]:", data['zip'])
         print (a, "[Offset]:", data2['offset'])
-        print (a, "[Utc offset]:", data4['utc_offset'])
+        print (a, "[Utc offset]:", data3['utc_offset'])
         print (a, "[Currency]:", data2['currency'])
         print (a, "[Continent]:", data2['continent'])
-        print (a, "[Country iso3]:", data4['country_code_iso3'])
-        print (a, "[Country area]:", data4['country_area'])
+        print (a, "[Country iso3]:", data3['country_code_iso3'])
+        print (a, "[Country area]:", data3['country_area'])
         print (a, "[Cuntry population]:", data4['country_population'])
-        print (a, "[Domain]:", data5['domain'])
-        print (a, "[ABBR]:", data5['abbr'])
-        print (a, "[Name]:", data5['name'])
-        print (a, "[Isp type]:", data5['type'])
         print (a, "[Phone]:", data1['country_phone'])
         print (a, "[Mobile]:", data2['mobile'])
         print (a, "[Hosting]:", data2['hosting'])
         print (a, "[Proxy]:", data2['proxy'])
-        print (a, "[Tor]:", data5['is_tor'])
         print (" "+lgreen)
-        print (a, "[Is known Attacker]:", data5['is_known_attacker'])
-        print (a, "[Is known abuser]:", data5['is_known_abuser'])
-        print (a, "[Is threat]:", data5['is_threat'])
-        print (a, "[Is bogon]:", data5['is_bogon'])
-        print (a, "[Is anonymous]:", data5['is_anonymous'])
-        print (a, "[DNS Server]:", data5['is_dst'])
         print (a, "[Requests]:", data1['completed_requests'])
         print (" "+yellow)
 
