@@ -74,8 +74,8 @@ try:
         print (a, "[Proxy]:", data2['proxy'])
         print (" "+lgreen)
         print (a, "[Requests]:", data1['completed_requests'])
+        time.sleep(0.1)
 
-time.sleep(0.1)
 api4 = "http://edns.ip-api.com/json/"
 
 try:
