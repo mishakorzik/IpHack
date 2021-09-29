@@ -74,12 +74,10 @@ try:
         print (a, "[Proxy]:", data2['proxy'])
         print (" "+lgreen)
         print (a, "[Requests]:", data1['completed_requests'])
-
-try:
-        data4 = requests.get(api2+ip).json()
-        sys.stdout.flush()
-        a = lgreen+bold+"[>]"
-        print (a, "[DNS Server]:", data4['ip'])
+data4 = requests.get(api2+ip).json()
+sys.stdout.flush()
+a = lgreen+bold+"[>]"
+print (a, "[DNS Server]:", data4['ip'])
 
 
 except KeyboardInterrupt:
