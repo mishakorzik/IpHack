@@ -74,11 +74,6 @@ try:
         print (a, "[Proxy]:", data2['proxy'])
         print (" "+lgreen)
         print (a, "[Requests]:", data1['completed_requests'])
-data4 = requests.get(api2+ip).json()
-sys.stdout.flush()
-a = lgreen+bold+"[>]"
-print (a, "[DNS Server]:", data4['ip'])
-
 
 except KeyboardInterrupt:
         print ('Quiting Utility! Bye Bye, Have a nice day!'+lgreen)
