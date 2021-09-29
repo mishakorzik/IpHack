@@ -3,7 +3,6 @@ import requests
 import json
 import sys
 import os
-import time
 from sys import argv
 
 parser = argparse.ArgumentParser()
@@ -74,17 +73,6 @@ try:
         print (a, "[Proxy]:", data2['proxy'])
         print (" "+lgreen)
         print (a, "[Requests]:", data1['completed_requests'])
-        time.sleep(0.1)
-
-api4 = "http://edns.ip-api.com/json/"
-
-try:
-        data4 = requests.get(api4+ip).json()
-        sys.stdout.flush()
-        a = lgreen+bold+"[>]"
-        print (a, "[DNS Server]:", data4['ip'])
-        print (a, "[DNS Geo]:", data4['geo'])
-        print (" "+yellow)
 
 except KeyboardInterrupt:
         print ('Quiting Utility! Bye Bye, Have a nice day!'+lgreen)
