@@ -31,12 +31,11 @@ print (yellow+bold+"      Developer: Misha Korzhik "+clear)
 print (yellow+bold+"        Tool Version: v1.1 \n"+clear)
 
 ip = args.target
-os.system("echo "ip" > IpAddress.txt")
 inf = "?fields=status,continent,continentCode,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,offset,currency,isp,org,as,asname,mobile,proxy,hosting,query"
 inf1 = "/json/"
 
 api = "http://ip-api.com/json/"
-api1 = "http://ipwhois.app/json/
+api1 = "http://ipwhois.app/json/"
 api2 = "https://ipapi.co/"
 try:
         data1 = requests.get(api1+ip).json()
