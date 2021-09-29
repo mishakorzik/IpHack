@@ -75,11 +75,11 @@ try:
         print (" "+lgreen)
         print (a, "[Requests]:", data1['completed_requests'])
         except:
-               data4 = requests.get(api2+ip).json()
-               sys.stdout.flush()
-               a = lgreen+bold+"[>]"
-               print (a, "[DNS Ip]:", data4['ip'])
-               print (a, "[DNS Geo]:", data4['geo'])
+                 data4 = requests.get(api2+ip).json()
+                 sys.stdout.flush()
+                 a = lgreen+bold+"[>]"
+                 print (a, "[DNS Ip]:", data4['ip'])
+                 print (a, "[DNS Geo]:", data4['geo'])
 
 except KeyboardInterrupt:
         print ('Quiting Utility! Bye Bye, Have a nice day!'+lgreen)
