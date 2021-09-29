@@ -70,7 +70,7 @@ try:
         print (a, "[Timezone DST Offset]:", data1['timezone_dstOffset'])
         print (a, "[Timezone GMT]:", data1['timezone_gmt'])
         print (a, "[Timezone Name]:", data1['timezone_name'])
-        print (a, "[Phone]:", data1['country_phone'])
+        print (a, "[Calling Phone]:", data1['country_phone'])
         print (a, "[Mobile]:", data2['mobile'])
         print (a, "[Hosting]:", data2['hosting'])
         print (a, "[Proxy]:", data2['proxy'])
