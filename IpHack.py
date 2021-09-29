@@ -49,7 +49,6 @@ try:
         print (a, "[Type]:", data1['type'])
         print (a, "[ISP]:", data['isp'])
         print (a, "[Org]:", data['org'])
-        print (a, "[Query]:", data['query'])
         print (a, "[As]:", data['as'])
         print (a, "[City]:", data['city'])
         print (a, "[Region]:", data['region'])
