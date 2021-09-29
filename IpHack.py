@@ -31,7 +31,7 @@ print (yellow+bold+"      Developer: Misha Korzhik "+clear)
 print (yellow+bold+"        Tool Version: v1.1 \n"+clear)
 
 ip = args.target
-inf = "?fields=asname,reverse,mobile,proxy,hosting,offset,currency,continent"
+inf = "?fields=status,continent,continentCode,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,offset,currency,isp,org,as,asname,mobile,proxy,hosting,query"
 inf1 = "/json/"
 
 api = "http://ip-api.com/json/"
@@ -39,28 +39,28 @@ api1 = "http://ipwhois.app/json/"
 api2 = "http://edns.ip-api.com/json/"
 api3 = "https://ipapi.co/"
 try:
-        data = requests.get(api+ip).json()
         data1 = requests.get(api1+ip).json()
         data2 = requests.get(api+ip+inf).json()
         data3 = requests.get(api3+ip+inf1).json()
+        data4 = requests.get(api2+ip).json()
         sys.stdout.flush()
         a = lgreen+bold+"[>]"
-        print (a, "[Status]:", data['status'])
-        print (a, "[Victim]:", data['query'])
+        print (a, "[Status]:", data2['status'])
+        print (a, "[Victim]:", data2['query'])
         print (a, "[Type]:", data1['type'])
-        print (a, "[ISP]:", data['isp'])
-        print (a, "[Org]:", data['org'])
-        print (a, "[As]:", data['as'])
-        print (a, "[City]:", data['city'])
-        print (a, "[Region]:", data['region'])
-        print (a, "[RegionName]:", data['regionName'])
-        print (a, "[Country]:", data['country'])
-        print (a, "[CountryCode]:", data['countryCode'])
+        print (a, "[ISP]:", data2['isp'])
+        print (a, "[Org]:", data2['org'])
+        print (a, "[As]:", data2['as'])
+        print (a, "[City]:", data2['city'])
+        print (a, "[Region]:", data2['region'])
+        print (a, "[RegionName]:", data2['regionName'])
+        print (a, "[Country]:", data2['country'])
+        print (a, "[CountryCode]:", data2['countryCode'])
         print (a, "[Country Type]:", data1['country_neighbours'])
         print (a, "[Latitude]:", data1['latitude'])
         print (a, "[Longitude]:", data1['longitude'])
-        print (a, "[Time zone]:", data['timezone'])
-        print (a, "[Zip code]:", data['zip'])
+        print (a, "[Time zone]:", data2['timezone'])
+        print (a, "[Zip code]:", data2['zip'])
         print (a, "[Offset]:", data2['offset'])
         print (a, "[Utc offset]:", data3['utc_offset'])
         print (a, "[Currency]:", data2['currency'])
@@ -73,6 +73,8 @@ try:
         print (a, "[Hosting]:", data2['hosting'])
         print (a, "[Proxy]:", data2['proxy'])
         print (a, "[Requests]:", data1['completed_requests'])
+        print (a, "[DNS Ip]:", data4['ip'])
+        print (a, "[DNS Geo]:", data4['geo'])
 
 except KeyboardInterrupt:
         print ('Quiting Utility! Bye Bye, Have a nice day!'+lgreen)
