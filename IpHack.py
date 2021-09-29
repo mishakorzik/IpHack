@@ -37,11 +37,13 @@ inf1 = "/json/"
 api = "http://ip-api.com/json/"
 api1 = "http://ipwhois.app/json/"
 api3 = "https://ipapi.co/"
+api4 = "http://edns.ip-api.com/json/"
 try:
         data = requests.get(api+ip).json()
         data1 = requests.get(api1+ip).json()
         data2 = requests.get(api+ip+inf).json()
         data3 = requests.get(api3+ip+inf1).json()
+        data4 = requests.get(api4+ip).json()
         sys.stdout.flush()
         a = lgreen+bold+"[>]"
         print (a, "[Status]:", data['status'])
@@ -71,6 +73,9 @@ try:
         print (a, "[Mobile]:", data2['mobile'])
         print (a, "[Hosting]:", data2['hosting'])
         print (a, "[Proxy]:", data2['proxy'])
+        print (" "+lgreen)
+        print (a, "[DNS Server]:", data4['ip'])
+        print (a, "[DNS Geo]:", data4['geo'])
         print (a, "[Requests]:", data1['completed_requests'])
         print (" "+yellow)
 
