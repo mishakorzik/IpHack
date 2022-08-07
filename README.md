@@ -41,17 +41,13 @@
 ## Install
 
 ```bash
-apt update && apt upgrade
-apt install git
-git clone https://github.com/mishakorzik/IpHack
-cd IpHack
-bash setup.sh
+pip install iphack
 ```
 
 **to start IpHack write the command:**
 ```bash
-cd IpHack
-python IpHack.py -t (victim ip)
+from iphack import ip
+ip.address("ip")
 ```
 
 ## I recommend watching
