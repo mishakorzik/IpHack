@@ -48,7 +48,7 @@ pip install iphack
 ```
 
 **to start IpHack write the command:**
-```bash
+```python
 from iphack import ip
 ip.address("ip")
 ```
