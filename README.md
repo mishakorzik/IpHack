@@ -43,7 +43,6 @@
 ## Install
 
 ```bash
-pip install requests
 pip install iphack
 ```
 
