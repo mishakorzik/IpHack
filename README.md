@@ -49,8 +49,17 @@ pip install iphack
 
 **to start IpHack write the command:**
 ```python
+# ip address tracking
 from iphack import ip
-ip.address("ip")
+ip.address("ip") 
+
+# domain ip address tracking
+from iphack import ip
+ip.domain("google.com")
+
+# my ip address
+from iphack import ip
+ip.my()
 ```
 
 ## I recommend watching
