@@ -37,7 +37,7 @@
 **3) More Information**
 - Now you can learn more about the device via IP
 
-**4) Detail Information
+**4) Detail Information**
 - You can find out a lot of information about IP
 -----
 ## Install
