@@ -60,6 +60,12 @@ ip.domain("google.com")
 from iphack import ip
 ip.my()
 ```
+## Screenshot
+
+```
+System: Ubuntu 20.04 LTS
+```
+<img width="99.9%" src="https://raw.githubusercontent.com/mishakorzik/IpHack/main/Screenshot_2022-08-13_21-33-49.png"/>
 
 ## I recommend watching
 
