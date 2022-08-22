@@ -92,6 +92,11 @@ inquiry.debug() #disable log
 
 ## Screenshot
 
+**Without logs**
+<img width="99.9%" src="https://raw.githubusercontent.com/mishakorzik/IpHack/main/IMG_20220822_110928.jpg"/>
+**With logs**
+<img width="99.9%" src="https://raw.githubusercontent.com/mishakorzik/IpHack/main/IMG_20220822_111039.jpg"/>
+
 ```
 System   : Ubuntu 20.04 LTS
 Terninal : Xfce4-Terminal
