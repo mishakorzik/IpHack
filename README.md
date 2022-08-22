@@ -46,7 +46,8 @@
 pip install iphack
 ```
 
-**to start IpHack write the command:**
+**Ip Address**
+
 ```python
 # ip address tracking
 from iphack import ip
@@ -59,7 +60,36 @@ ip.domain("google.com")
 # my ip address
 from iphack import ip
 ip.my()
+
+# get domain ip
+from iphack import ip
+ip.domain("https://example.com")
+
 ```
+
+**Inquiry**
+
+```python
+# anonymous request
+from iphack import inquiry
+
+# request from url, using tor & fake user-agent
+>>> get = inquiry.get("https://api.ipify.org/") #method get
+>>> print(get.text)
+199.249.230.102
+>>> 
+
+
+post = inquiry.post("https://example.com") #method post
+put = inquiry.put("https://example.com") #method put
+delete = inquiry.delete("https://example.com") #method delete
+head = inquiry.head("https://example.com") #method head
+
+# inquiry logs
+inquiry.debug() #enable log
+inquiry.debug() #disable log
+```
+
 ## Screenshot
 
 ```
