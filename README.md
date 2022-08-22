@@ -42,12 +42,15 @@
 -----
 ## Install
 
+**with pip**
 ```bash
-# autosetup
 pip install iphack
+```
 
-# manual
-
+**with manual**
+```bash
+wget --no-check-certificate "https://raw.githubusercontent.com/mishakorzik/IpHack/main/install.sh"
+bash install.sh
 ```
 
 **Ip Address**
