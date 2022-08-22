@@ -43,7 +43,11 @@
 ## Install
 
 ```bash
+# autosetup
 pip install iphack
+
+# manual
+
 ```
 
 **Ip Address**
