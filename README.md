@@ -95,6 +95,10 @@ head = inquiry.head("https://example.com") #method head
 # inquiry logs
 inquiry.debug() #enable log
 inquiry.debug() #disable log
+
+# inquiry anon method (default: vpn)
+inquiry.rechange() #use tor
+inquiry.rechange() #use vpn
 ```
 
 ## Screenshot
