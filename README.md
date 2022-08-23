@@ -105,8 +105,10 @@ inquiry.rechange() #use vpn
 
 **Without logs**
 <img width="99.9%" src="https://raw.githubusercontent.com/mishakorzik/IpHack/main/IMG_20220822_110928.jpg"/>
-**With logs**
-<img width="99.9%" src="https://raw.githubusercontent.com/mishakorzik/IpHack/main/IMG_20220822_111039.jpg"/>
+**With logs & tor**
+<img width="99.9%" src="https://raw.githubusercontent.com/mishakorzik/IpHack/main/IMG_20220823_100657.jpg"/>
+**With logs & vpn**
+<img width="99.9%" src="https://raw.githubusercontent.com/mishakorzik/IpHack/main/IMG_20220823_101848.jpg"/>
 
 ```
 System   : Ubuntu 20.04 LTS
