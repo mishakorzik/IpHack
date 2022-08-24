@@ -49,6 +49,11 @@ pip install iphack
 
 **with manual**
 ```bash
+pip install pyproxify
+pip install ua-headers
+pip install requests
+pip install torpy==1.1.6
+pip install eventlet==0.33.1
 wget --no-check-certificate "https://raw.githubusercontent.com/mishakorzik/IpHack/main/install.sh"
 bash install.sh
 ```
