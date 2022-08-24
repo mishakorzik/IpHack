@@ -73,6 +73,15 @@ ip.my()
 from iphack import ip
 ip.domain("https://example.com")
 
+# get proxy
+from iphack import ip
+ip.proxy(False)
+
+# get proxy list for api
+>>> from iphack import ip
+>>> ip.proxy(True)
+['130.41.47.235:8080', '130.41.55.190:8080', '130.41.15.76:8080']
+>>>
 ```
 
 **Inquiry**
@@ -87,7 +96,6 @@ from iphack import inquiry
 199.249.230.102
 >>> 
 
-
 post = inquiry.post("https://example.com") #method post
 put = inquiry.put("https://example.com") #method put
 delete = inquiry.delete("https://example.com") #method delete
@@ -97,9 +105,9 @@ head = inquiry.head("https://example.com") #method head
 inquiry.debug() #enable log
 inquiry.debug() #disable log
 
-# inquiry anon method (default: vpn)
-inquiry.rechange() #use tor
-inquiry.rechange() #use vpn
+# inquiry anon method (default: tor)
+inquiry.rechange("vpn") #use tor
+inquiry.rechange("tor") #use vpn
 ```
 
 ## Screenshot
