@@ -106,8 +106,8 @@ inquiry.debug() #enable log
 inquiry.debug() #disable log
 
 # inquiry anon method (default: tor)
-inquiry.rechange("vpn") #use tor
-inquiry.rechange("tor") #use vpn
+inquiry.rechange("vpn") #use vpn
+inquiry.rechange("tor") #use tor
 ```
 
 ## Screenshot
