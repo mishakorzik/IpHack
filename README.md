@@ -89,6 +89,24 @@ ip.proxy(False)
 >>>
 ```
 
+**Check Proxy**
+
+```python
+# check proxy 
+>>> from iphack import check
+>>> check.proxy("130.41.55.190", "8080")
+Proxy    : Online #Online or Offline
+Asn      : AS396982
+Org      : GOOGLE-CLOUD-PLATFORM
+City     : Los Angeles
+Country  : United States
+Region   : California
+Network  : 130.41.52.0/22
+Version  : IPv4
+>>>
+
+```
+
 **Inquiry**
 
 ```python
@@ -111,8 +129,9 @@ inquiry.debug() #enable log
 inquiry.debug() #disable log
 
 # inquiry anon method (default: tor)
+inquiry.rechange("tor") #use tor (recommend)
+inquiry.rechange("web") #use vpn (recommend)
 inquiry.rechange("vpn") #use vpn
-inquiry.rechange("tor") #use tor
 ```
 
 ## Screenshot
