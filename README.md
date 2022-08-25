@@ -140,6 +140,8 @@ inquiry.rechange("vpn") #use vpn
 <img width="99.9%" src="https://raw.githubusercontent.com/mishakorzik/IpHack/main/IMG_20220822_110928.jpg"/>
 **With logs & tor**
 <img width="99.9%" src="https://raw.githubusercontent.com/mishakorzik/IpHack/main/IMG_20220824_150950.jpg"/>
+**With logs & web**
+<img width="99.9%" src="https://raw.githubusercontent.com/mishakorzik/IpHack/main/IMG_20220825_134850.jpg"/>
 **With logs & vpn**
 <img width="99.9%" src="https://raw.githubusercontent.com/mishakorzik/IpHack/main/IMG_20220824_151717.jpg"/>
 
