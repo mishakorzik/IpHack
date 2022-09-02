@@ -147,7 +147,7 @@ inquiry.rechange("vpn") #use vpn
 
 ```
 System   : Ubuntu 20.04 LTS
-Terninal : Xfce4-Terminal
+Terminal : Xfce4-Terminal
 Desktop  : Xfce4
 ```
 <img width="99.9%" src="https://raw.githubusercontent.com/mishakorzik/IpHack/main/Screenshot_2022-08-13_21-33-49.png"/>
