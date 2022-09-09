@@ -44,7 +44,7 @@
 
 **with pip**
 ```bash
-pip install iphack==1.2.0
+pip install iphack==1.2.1
 ```
 
 **with manual**
