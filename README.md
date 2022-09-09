@@ -120,7 +120,7 @@ ip.directory("amazon.com")
 
 # Send text to email
 from iphack import ip
-ip.smtp("developer.mishakorzhik@gmail.com", "hello, its a test!")
+ip.smtp("he1zen@null.net", "hello, its a test!")
 
 ```
 
