@@ -153,6 +153,8 @@ inquiry.rechange("vpn") #use vpn
 
 ## Screenshot
 
+**Repository Views** ![Views](https://profile-counter.glitch.me/IpHack/count.svg)
+
 **Without logs**
 <img width="99.9%" src="https://raw.githubusercontent.com/mishakorzik/IpHack/main/IMG_20220822_110928.jpg"/>
 **With logs & tor**
