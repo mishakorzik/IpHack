@@ -49,7 +49,7 @@ pip install iphack
 
 **with manual**
 ```bash
-pip install pyproxify
+pip install pyproxify==0.0.1
 pip install ua-headers
 pip install requests
 pip install torpy==1.1.6
