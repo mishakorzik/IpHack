@@ -74,10 +74,6 @@ ip.domain("google.com")
 from iphack import ip
 ip.my()
 
-# get domain ip
-from iphack import ip
-ip.domain("https://example.com")
-
 # get proxy
 from iphack import ip
 ip.proxy(False)
