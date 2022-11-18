@@ -114,10 +114,6 @@ ip.subdomains("amazon.com")
 from iphack import ip
 ip.directory("amazon.com")
 
-# Send text to email
-from iphack import ip
-ip.smtp("he1zen@null.net", "hello, its a test!")
-
 ```
 
 **Inquiry**
