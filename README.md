@@ -103,7 +103,7 @@ Version  : IPv4
 
 ```
 
-**Websites & SMTP**
+**Websites**
 
 ```python
 # Check amazon subdomains
