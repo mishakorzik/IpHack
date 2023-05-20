@@ -84,9 +84,9 @@ ip.proxy(False)
 ['3.66.38.117:10882', '130.41.47.235:8080', '130.41.55.190:8080']
 >>>
 
-# get domain IP behind CF
+# search IP by word or domain behind CF
 >>> from iphack import *
->>> iphack.domain.ip("google.com")
+>>> iphack.search.p("google.com")
 1.0.126.229 / 1.0.158.92 / 1.0.160.34 / 1.0.161.31 / 1.0.164.79 / 1.0.167.84 / 1.0.167.205 / 1.0.168.165 / 1.0.169.41 / 1.0.247.243
 >>>
 
